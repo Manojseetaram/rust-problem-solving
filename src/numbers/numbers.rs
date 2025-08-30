@@ -148,7 +148,11 @@ pub fn gcd_number(mut a : i32 ,mut b : i32)-> i32{
      a
 }
 //13 .lcm a * b / gcd
-pub fn lcm_nu
+pub fn lcm_number(a : i32  , b : i32)-> i32{
+   let lcm = gcd_number(a, b);
+   let temp = (a * b ) / lcm;
+   temp
+}
  //Number printing operation 
 pub fn numbers_operatins(){
     let n = 8;
@@ -170,5 +174,6 @@ pub fn numbers_operatins(){
     println!("Prime numbers : {}-> {:?}",n , prime_numbers(n));
     println!("Reverse same number : {} = {}",ap,reverse_same_number(ap));
     println!("The gcd numbr : {}",gcd_number(ap, ap1));
+      println!("The lcm numbr : {}",lcm_number(ap, ap1));
 
 }
