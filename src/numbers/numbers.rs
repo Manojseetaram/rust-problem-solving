@@ -132,6 +132,23 @@ pub fn reverse_same_number(s : i32)-> bool{
         return false;
     }
 }
+//12. Gretest comman divisor a 2 b 10 = retrun 1
+pub fn gcd_number(mut a : i32 ,mut b : i32)-> i32{
+     if b == 0 {
+        return a ;
+     }
+     if a == 0 {
+        return 0;
+     }
+     while b!= 0  {
+         let temp = a % b;
+          a = b;
+          b = temp
+     }
+     a
+}
+//13 .lcm a * b / gcd
+pub fn lcm_nu
  //Number printing operation 
 pub fn numbers_operatins(){
     let n = 8;
@@ -151,6 +168,7 @@ pub fn numbers_operatins(){
     println!("Palindrome number is : {:?}" , array_palindrome_number(ap , ap1));
     println!("num is eqult to the sum of its proper divisors : {:?} - > {}",n , is_perfect_number(n));
     println!("Prime numbers : {}-> {:?}",n , prime_numbers(n));
-    println!("Reverse same number : {} = {}",ap,reverse_same_number(ap))
+    println!("Reverse same number : {} = {}",ap,reverse_same_number(ap));
+    println!("The gcd numbr : {}",gcd_number(ap, ap1));
 
 }

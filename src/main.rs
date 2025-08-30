@@ -21,32 +21,8 @@ mod map;
 
 
 
-// //This is devide both number exactly with out number 
-// fn gcd_numbers( mut a : i32 , mut b : i32)-> i32{
-//    if b == 0 {
-//     return a;
 
-//    }else if a == 0 {
-//        return b;
-//    }
-//    while b != 0  {
-//        let temp = a % b;
-//        a = b ;
-//        b = temp
-//    }
-// a
-// }
 
-// fn lcm_numbers(  a : i32 ,  b : i32)-> i32{
-//     let gcd_value = gcd_numbers(a, b);
-     
-     
-//         let temp = (a * b ) / gcd_value;
-       
-     
-//      temp
-     
-// }
 
 
 
