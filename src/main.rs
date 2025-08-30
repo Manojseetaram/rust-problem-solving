@@ -352,15 +352,7 @@ mod map;
 // //Reverse word string
 // //"Hello Word" -> Expected output Word Hello
 
-// fn revrse_word (s : &str)-> String{
-//       let  mut str = Vec::new();
-//       for i in s.split_whitespace(){
-//        let rev = i.chars().rev().collect::<String>(  );
-//          str.push(rev);
-          
-//       }
-//       str.join(" ")
-// }
+
 
 // //Starting word capiatal 
 // //"hello manoj seetaram"

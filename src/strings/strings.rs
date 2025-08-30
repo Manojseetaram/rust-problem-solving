@@ -50,6 +50,15 @@ pub fn revrse_string_and_number(s : &str , s1 : Vec<i32>)-> Vec<(String , i32)>{
      let num = s1.iter().rev().copied().collect::<Vec<i32>>();
      num.iter().map(|v|(str.clone(), *v)).collect()
 }
+//6. reverse word not a full string like "Memory sefty" -> "ryomeM ytfrs"
+pub fn revrse_word(s : &str)-> String{
+      let mut word = Vec::new();
+      for i in s.split_whitespace(){
+       let str = i.chars().rev().collect::<String>();
+       word.push(str);
+      }
+      word.join(" ")
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -60,4 +69,5 @@ pub fn string_operation(){
     println!("Order by the string lenth : {:?}",order_string_length(s));
     println!("Count the word : {:?}" , count_words_in_string(word));
     println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
+    println!("Rverse the Word : {} -> {:?}", word , revrse_word(word))
 }
