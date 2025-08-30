@@ -32,6 +32,7 @@ pub fn fibonaci(n : i32)-> i32{
 }   
 pub fn numbers_operatins(){
     let n = 8;
+    
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
 }

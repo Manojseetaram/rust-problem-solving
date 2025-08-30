@@ -651,7 +651,7 @@ fn main(){
    
     let n = 9;
     let n1 = 1234;
-    let num4 = vec![1 ,2 ,3 ,4 , 5 ,6];
+   
   let s = "babad";
   let caps = "hello manoj seetaram";
     
@@ -719,7 +719,7 @@ println!("Remove the duplicate number : {:?}" , duplicate_in_array(duplicates.cl
     
    
 
-    println!("The largest numer is : {}" ,largest_num(num4.clone()));
+
    
     
      println!("The frequency in the each charactor : {:?}" ,frequency_ch(str));
