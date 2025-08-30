@@ -68,17 +68,7 @@ mod map;
 //      temp
      
 // }
-// //Arm strong 1 5 3 
-// fn arm_strong(s : i32)-> bool{
-//     let mut sum = 0 ;
-//     let n = sum.to_string().len() as u32;
-//     for i in s.to_string().chars(){
-//         let divide = i.to_digit(10).unwrap();
-//         sum += divide.pow(n)
 
-//     }
-//     sum == s.try_into().unwrap()
-// }
 
 
 

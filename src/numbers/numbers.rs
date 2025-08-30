@@ -58,6 +58,16 @@ pub fn  sum_of_number(s : i32)-> i32{
       }
       num
 }
+//6. Aarm strong numbers 
+pub fn arm_strong_number(s : i32)-> bool{
+   let mut sum = 0;
+   let n = s.to_string().len() as u32;
+   for i in s.to_string().chars(){
+     let digit = i.to_digit(10).unwrap();
+     sum += digit.pow(n)
+   }
+   sum == s.try_into().unwrap()
+}
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
@@ -68,5 +78,6 @@ pub fn numbers_operatins(){
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
     println!("The {}th Factorial number is: {}", n ,factorial_number(&n));
     println!("Arrange ordere wise number : {:?}", arrange_oreder_wise_number(number));
-    println!("Sum of digit in the number : {}",sum_of_number(sum) )
+    println!("Sum of digit in the number : {}",sum_of_number(sum) );
+    println!("The Arm strong number : {:?}" ,arm_strong_number(sum))
 }
