@@ -15,21 +15,15 @@ pub fn ntg_fibonaci(n :i32)-> i32{
     b
 }
 //fibonaci
-pub fn fibonaci(n : i32)-> i32{
-    let (mut a   , mut b ) = (0 , 1);
-    if n == 0 {
-        return  a;
+pub fn fibonaci(s : i32)-> i32{
+    let (mut a ,mut b ) = (0 , 1);
+    for _ in 0..s{
+     let next = a + b ;
+     a = b;
+     b = next
     }
-    if n == 1 {
-        return  b;
-    }
-    for _ in 2..= n {
-        let next = a  + b ;
-        a = b ;
-        b = next
-    }
-    b
-}   
+a
+}  
 pub fn numbers_operatins(){
     let n = 8;
     

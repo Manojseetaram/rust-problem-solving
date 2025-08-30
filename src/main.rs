@@ -10,19 +10,6 @@ mod strings;
 
 
 
-//Find the Largest number 
-fn largest_num(s : Vec<i32>)-> i32{
-   let mut num = s[0];
-   for i in s.iter(){
-    if *i > num {
-        num = *i
-    }
-   }
-   num
-   
-  
-}
-//Find the smalest number 
 
 
 //ferceny in the eh charactor
@@ -292,16 +279,7 @@ fn factorial_numbers (s : &i32)-> i32{
     }
     num
 }
-//Fibonaci number 
-fn fibbonaci_number (s : i32)-> i32{
-  let (mut a , mut b) = (0 , 1);
-  for _ in 0..s{
-    let next = a + b;
-    a = b ;
-    b = next
-  }
-  a
-}
+
 //sum of digits 
 fn sum_of_digits(s : i32)-> i32{
   let mut sum = 0;
@@ -316,16 +294,7 @@ fn revrese_strings(s1 : &str , s2 : Vec<i32>)-> Vec<(String , i32)>{
    let result1 = s2.iter().rev().copied().collect::<Vec<i32>>();
    result1.iter().map(|x|(result.clone(), *x )).collect()
 }
-//smalest numbers
-fn smalest_numbers(s : Vec<i32>)-> i32{
-    let mut num = s[0];
-    for i in s.iter(){
-      if *i < num {
-       num = *i
-      }
-    }
-    num
-}
+
 //Order string setting 
 fn order_string(s : Vec<String>)-> Vec<String>{
        let mut str = s.clone();
