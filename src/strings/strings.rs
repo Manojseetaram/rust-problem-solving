@@ -98,6 +98,16 @@ pub fn increment_the_count(s : &str)-> Vec<(String , usize)>{
   }
   result
 }
+// 10. lonest word in the string 
+pub fn lonest_word_in_the_string(s : &str)->String{
+    let mut longest = String::new();
+    for i in s.split_whitespace(){
+      if i.len() > longest.len(){
+        longest = i.to_string();
+      }
+    }
+   longest
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -112,5 +122,6 @@ pub fn string_operation(){
     println!("Non repeating char : {} -> {:?}",word,non_repeating_strig(word));
     println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word));
     println!("Incremnet the count in string words : {:?} ",increment_the_count(word));
+    println!("Longest word in the string : {} = {}",word , )
 
 }

@@ -32,17 +32,9 @@ mod map;
 
 
 
-  
 
 
-// //reverse also same word  palindrome checker 
-// fn reverse_palindrome(s : &str)-> bool{
- 
-//       let reverse = s.chars().rev().collect::<String>();
-//       reverse == s
-      
-     
-// }
+
 
 // //Remove alpabets
 
@@ -54,6 +46,7 @@ mod map;
 //      }
 //      count
 // }
+
 // fn anagram_cheker( s1:&str , s2: &str)-> bool{
 //   let mut result = s1.chars().collect::<Vec<_>>();
 //   let mut result1 = s2.chars().collect::<Vec<_>>();
@@ -80,18 +73,6 @@ mod map;
 //   }
 //   num
 // }
-// //Longest word in a sentents
-// fn longest_word(s : &str)-> String{
-//     let mut longest = String::new();
-
-//     for i in s.split_whitespace(){
-//       if i.len() > longest.len(){
-//         longest = i.to_string()
-//       }
-//     }
-//     longest
-// }
-//
 
 
 
@@ -131,19 +112,6 @@ mod map;
 //     }
 //     str
 // }
-// //count duplicate in arraya
-// fn duplicate_in_array(s : Vec<i32>)-> HashMap<i32 , i32>{
-//     let mut num = HashMap::new();
-
-//     for i in 0..s.len(){
-    
-//         *num.entry(s[i]).or_insert(0) += 1;
-      
-//     }
-//     num
-// }
-
-
 
 
 // //Longest palindrome 
