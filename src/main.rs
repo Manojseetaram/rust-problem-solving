@@ -32,31 +32,6 @@ mod map;
 
 
 
-
-
-
-
-// //Remove alpabets
-
-// fn remove_palinfrome(s: &str)-> HashSet<char>{
-//      let mut count = HashSet::new();
-
-//      for i in s.chars(){
-//         count.insert(i);
-//      }
-//      count
-// }
-
-// fn anagram_cheker( s1:&str , s2: &str)-> bool{
-//   let mut result = s1.chars().collect::<Vec<_>>();
-//   let mut result1 = s2.chars().collect::<Vec<_>>();
-//   result.sort();
-//   result1.sort();
-//   result1 == result
-     
-// }
-
-
 // //mising array number
 // fn missing_number(s : Vec<i32>)-> i32{
 //    let num = s.len() as i32 + 1;
@@ -64,15 +39,6 @@ mod map;
 //    let sums : i32 = s.iter().sum();
 //    arra - sums
 // }
-// //Find the duplicate in array 
-// fn duplicate_number(s: Vec<i32>)-> HashSet<i32>{
-//   let mut num = HashSet::new();
-
-//   for i in s.iter(){
-//     num.insert(*i);
-//   }
-//   num
-// }
 
 
 
@@ -80,38 +46,7 @@ mod map;
 
 
 
-// //Find non repeating character fn non_repeating(s : &str)-> Option<char>{
-// fn non_repeating(s : &str)-> Option<char>{
-//   //Store the string in HashMap
-//     let mut str = HashMap::new();
-//     //count the all string and take the charactore number 
-//     for i in s.chars(){
-//       *str.entry(i).or_insert(0) += 1 ;
-//     }
-//     for i in s.chars(){
-//       if let Some(&count) = str.get(&i){
-//         if count == 1 {
-//           return  Some(i);
-//         }
-//       }
-//     }
-  
-//     None
-   
-    
-// }
 
-
-// /
-// //word priquency is 
-// fn word_frequncy(s : &str)-> HashMap<String , i32>{
-//     let mut str = HashMap::new();
-//     for i in s.split_whitespace(){
-//        let clean = i.chars().filter(|c | c.is_alphanumeric()).collect::<String>().to_lowercase();
-//        str.entry(clean).and_modify(|v|*v += 1).or_insert(1);
-//     }
-//     str
-// }
 
 
 // //Longest palindrome 

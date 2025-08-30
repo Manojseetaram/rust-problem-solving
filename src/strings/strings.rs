@@ -108,11 +108,23 @@ pub fn lonest_word_in_the_string(s : &str)->String{
     }
    longest
 }
+//11 . Anagram checkr silent -> Listen = true hello - word = false
+pub fn anagram_checker(s : &str , s1 : &str)-> bool{
+   let mut result = s.chars().collect::<Vec<_>>();
+   let mut result1 = s1.chars().collect::<Vec<_>>();
+   result.sort();
+   result1.sort();
+   result == result1
+
+}
+
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
     let num = vec![1 , 2 ,3 ,4 ,5 ,6 ,7];
     let s = vec!["apple".to_string() , "kiwi".to_string() , "banana".to_string()];
+    let anagram = "silent";
+    let anagram1 = "listen";
     println!("This is reverse string : {:?}" ,revrese_string(str));
     println!("Vovels in string : {}",vovels(str) );
     println!("Order by the string lenth : {:?}",order_string_length(s));
@@ -122,6 +134,7 @@ pub fn string_operation(){
     println!("Non repeating char : {} -> {:?}",word,non_repeating_strig(word));
     println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word));
     println!("Incremnet the count in string words : {:?} ",increment_the_count(word));
-    println!("Longest word in the string : {} = {}",word , )
+    println!("Longest word in the string : {} = {}",word ,lonest_word_in_the_string(word) );
+    println!("Anagarm checker : {:?}",anagram_checker(anagram,anagram1) )
 
 }
