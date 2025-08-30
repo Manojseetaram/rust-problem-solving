@@ -53,18 +53,26 @@ pub fn second_smalest_number(s : Vec<i32>)-> i32{
      }
      n
 }
-
+//6. Missing number is 2 , 7
+pub fn missing_number(s : Vec<i32>)-> i32{
+ let  num = s.len() as i32 + 1;
+ let  arra = num * (num + 1) / 2;
+ let  sums : i32= s.iter().sum();
+   arra - sums
+}
 //Array operation
 pub fn array_operation(){
      let num = vec!['1' , '2' ,'3' , '4' , '5','6'];
      let num_op = vec![1 ,2 ,3 ,4 , 5 ,6];
-     
+     let number = vec![1 , 3 , 4 , 5, 6,8];
+
 
      println!("This is revrse number : {:#?}" ,revrse_num(num));
      println!("The largest number is : {}", largest_number(num_op.clone()));
      println!("The smalest number is : {}", smalest_number(num_op.clone()));
      println!("This is a Secondlargest number : {}",second_largest_number(num_op.clone()));
      println!("This is a Second smalest number : {}",second_smalest_number(num_op.clone()));
+     println!("In this array the missing number is : {}", missing_number(number))
     
 
 
