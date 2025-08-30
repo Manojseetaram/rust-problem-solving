@@ -99,7 +99,20 @@ pub fn array_palindrome_number(s : i32 , s1 : i32)-> Vec<i32>{
         }
         num
 }
-//9. Count the word in string 
+//9. a number equal to the sum of its proper divisors, excluding itself exp : 28 -> 1 + 2 + 4 + 7 + 14 = 28
+  pub fn is_perfect_number(s : i32)-> bool{
+    let mut sum = 0;
+    for i in 1..=s/2{
+        if s % i == 0 {
+            sum += i
+        }
+    }
+    sum == s
+  }
+
+
+
+ //Number printing operation 
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
@@ -116,5 +129,6 @@ pub fn numbers_operatins(){
     println!("The Arm strong number : {:?}" ,arm_strong_number(sum));
     println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) );
     println!("Palindrome number is : {:?}" , array_palindrome_number(ap , ap1));
+    println!("num is eqult to the sum of its proper divisors : {}")
 
 }

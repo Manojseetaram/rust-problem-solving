@@ -74,6 +74,7 @@ pub fn non_repeating_strig(s : &str)-> Option<char>{
   }
   None
 }
+
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -85,5 +86,6 @@ pub fn string_operation(){
     println!("Count the word : {:?}" , count_words_in_string(word));
     println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
     println!("Rverse the Word : {} -> {:?}", word , revrse_word(word));
-    println!("Non repeating strings : {} -> {:?}",word,non_repeating_strig(word))
+    println!("Non repeating char : {} -> {:?}",word,non_repeating_strig(word));
+
 }
