@@ -44,12 +44,20 @@ pub fn count_words_in_string(s : &str)-> HashMap<String , i32>{
     count
 
 }
+//5. reverse string and number 
+pub fn revrse_string_and_number(s : &str , s1 : Vec<i32>)-> Vec<(String , i32)>{
+     let str = s.chars().rev().clone().collect::<String>();
+     let num = s1.iter().rev().copied().collect::<Vec<i32>>();
+     num.iter().map(|v|(str.clone(), *v)).collect()
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
+    let num = vec![1 , 2 ,3 ,4 ,5 ,6 ,7];
     let s = vec!["apple".to_string() , "kiwi".to_string() , "banana".to_string()];
     println!("This is reverse string : {:?}" ,revrese_string(str));
     println!("Vovels in string : {}",vovels(str) );
     println!("Order by the string lenth : {:?}",order_string_length(s));
     println!("Count the word : {:?}" , count_words_in_string(word));
+    println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
 }
