@@ -86,11 +86,25 @@ pub fn factorial_of_each_number(s : i32)-> bool{
         return false;
     }
 }
+//8. Array palindrome number  120 = 150
+pub fn array_palindrome_number(s : i32 , s1 : i32)-> Vec<i32>{
+        let mut num = Vec::new();
+        for i in s..=s1{
+            let str = i.to_string();
+            let rev = str.chars().rev().collect::<String>();
+            if str == rev {
+              num.push(i);
+            }
+
+        }
+        num
+}
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
     let sum = 123;
-
+    let ap = 120;
+    let ap1 = 150;
     
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
@@ -98,5 +112,6 @@ pub fn numbers_operatins(){
     println!("Arrange ordere wise number : {:?}", arrange_oreder_wise_number(number));
     println!("Sum of digit in the number : {}",sum_of_number(sum) );
     println!("The Arm strong number : {:?}" ,arm_strong_number(sum));
-    println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) )
+    println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) );
+    println!("Palindrome number is : {:?}" , array_palindrome_number(ap , ap1));
 }

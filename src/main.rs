@@ -351,19 +351,7 @@ mod map;
 
 // //   }
 
-// //Arry palindrome NUMBER 120 TO 150
-// fn array_palindrome_numbers(s: i32, s1: i32) -> Vec<i32> {
-//     let mut num = Vec::new();
-//     for d in s..=s1 {
-//         let rev = d.to_string();
-//         let rev1 = rev.chars().rev().collect::<String>();
 
-//         if rev == rev1 {
-//             num.push(d);
-//         }
-//     }
-//     num
-// }
 
 
 // //Longest palindrome 
