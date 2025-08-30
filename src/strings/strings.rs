@@ -59,6 +59,21 @@ pub fn revrse_word(s : &str)-> String{
       }
       word.join(" ")
 }
+//7. Non repeating strings exp : seetaram -> stm
+pub fn non_repeating_strig(s : &str)-> Option<char>{
+  let mut str = HashMap::new();
+  for i in s.chars(){
+      *str.entry(i).or_insert(0) += 1;
+  }
+  for i in s.chars(){
+    if let Some(&count) = str.get(&i){
+       if count == 1 {
+        return Some(i);
+       }
+    }
+  }
+  None
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -69,5 +84,6 @@ pub fn string_operation(){
     println!("Order by the string lenth : {:?}",order_string_length(s));
     println!("Count the word : {:?}" , count_words_in_string(word));
     println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
-    println!("Rverse the Word : {} -> {:?}", word , revrse_word(word))
+    println!("Rverse the Word : {} -> {:?}", word , revrse_word(word));
+    println!("Non repeating strings : {} -> {:?}",word,non_repeating_strig(word))
 }

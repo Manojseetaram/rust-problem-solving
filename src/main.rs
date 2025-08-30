@@ -214,22 +214,7 @@ mod map;
 //    }
 //    str
 // }
-// // //Non repeating string is 
-// // fn non_repeating_strig(s : &str)->Option<char>{
-// //     let mut str = HashMap::new();
-// //     for i in s.chars(){
-// //       *str.entry(i).or_insert(0) += 1;
-// //     }
-// //     for i in s.chars(){
-// //       if let Some(&count) = str.get(&i){
-// //         if count == 1 {
-// //           return Some(i);
-// //         }
-// //       }
-// //     }
-// //     None
-// // }
-
+// /
 // //word priquency is 
 // fn word_frequncy(s : &str)-> HashMap<String , i32>{
 //     let mut str = HashMap::new();
