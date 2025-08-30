@@ -1,9 +1,7 @@
 
 
 //1 .revrse string
-
 use std::collections::HashMap;
-
 pub fn revrese_string(s :&str)-> String{
      let mut str = String::new();
      for i in s.chars(){
@@ -117,6 +115,41 @@ pub fn anagram_checker(s : &str , s1 : &str)-> bool{
    result == result1
 
 }
+// 12.Find the longest palindromic substring
+fn longest_palindrome(s : &str)-> String{
+  
+   
+   let str : Vec<char> = s.chars().collect();
+   let mut best_start = 0 ;
+   let mut best_len = 0; 
+   fn expand_around(chars : &Vec<char> ,mut left : isize ,mut right : isize)->(usize , usize){
+      while left >= 0 
+         && right < chars.len() as isize
+         && chars[left as usize] == chars[right as usize]
+         {
+          left -= 1 ;
+          right += 1
+          }
+    ((left + 1) as usize , (right - 1 ) as usize)
+   }
+   for i in 0..str.len(){
+      let (l , r) = expand_around(&str,i as isize, i as isize);
+      if r - i + 1 > best_len{
+         best_start = l ;
+         best_len = r - l + 1;
+
+      }
+      let (l1 , r1) = expand_around(&str, i as isize, i as isize + 1);
+      if r1 >= l1 && r1 - l1 + 1 > best_len{
+         best_start = l1;
+         best_len = r1 - l1 + 1;
+      }
+   }
+
+str[best_start..best_start + best_len].iter().collect()
+
+
+   }
 
 pub fn string_operation(){
     let str = "Manojseetaram";
@@ -135,6 +168,7 @@ pub fn string_operation(){
     println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word));
     println!("Incremnet the count in string words : {:?} ",increment_the_count(word));
     println!("Longest word in the string : {} = {}",word ,lonest_word_in_the_string(word) );
-    println!("Anagarm checker : {:?}",anagram_checker(anagram,anagram1) )
+    println!("Anagarm checker : {:?}",anagram_checker(anagram,anagram1) );
+    println!("Lonest palindrome : {:?}", longest_palindrome(str));
 
 }
