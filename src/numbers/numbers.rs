@@ -1,3 +1,5 @@
+
+
 //Calculte the ntg Fibbonaci numbers 
 pub fn ntg_fibonaci(n :i32)-> i32{
     let (mut  a  , mut b ) = (0 , 1);
@@ -24,9 +26,21 @@ pub fn fibonaci(s : i32)-> i32{
     }
 a
 }  
+//Factorial number
+pub fn factorial_number(s : &i32)-> i32{
+   let mut num = 1;
+   for i in 1..=*s{
+      if i == num {
+        num *= i
+      }
+   }
+   num
+}
+
 pub fn numbers_operatins(){
     let n = 8;
     
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
+    println!("The {}th Factorial number is: {}", n ,factorial_number(&n))
 }

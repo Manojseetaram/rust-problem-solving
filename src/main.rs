@@ -104,15 +104,7 @@ fn arm_strong(s : i32)-> bool{
 
 //The lagest number 
 
-fn largest(s : Vec<i32>)-> i32{
-  let mut large = s[0];
-  for i in s.iter(){
-    if *i > large {
-        large = *i
-    }
-  }
-  large
-}
+
 
 //second largest
 fn second_largest(s: Vec<i32>)-> i32{
@@ -131,15 +123,7 @@ fn second_largest(s: Vec<i32>)-> i32{
      };
      second_number
 }
-fn smalest_number(s : Vec<i32>)-> i32{
-      let mut smalest = s[0];
-      for i in s.iter() {
-        if *i < smalest {
-            smalest = *i
-        }
-      }
-      smalest
-}
+
 fn smalest_secondnumber(s: Vec<i32>)-> i32{
     let  mut smalest = s[1];
     let mut second_smalest = s[2];
@@ -271,14 +255,7 @@ fn is_perfect(s : i32)-> bool {
     }
    sum == s
 }
-//factorial number is 
-fn factorial_numbers (s : &i32)-> i32{
-    let mut num = 1 ;
-    for i in 1..= *s{
-     num *= i
-    }
-    num
-}
+
 
 //sum of digits 
 fn sum_of_digits(s : i32)-> i32{
