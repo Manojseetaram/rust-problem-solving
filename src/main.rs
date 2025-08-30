@@ -212,17 +212,7 @@ mod map;
 
 // num
 // }
-// //PrimeNumbers 
-// fn reverse_same_number(s : i32)-> bool{
-//    let num = s.to_string();
-  
-//     let  rev = num.chars().rev().collect::<String>();
-//       if rev == num {
-//            return true
-//       } else {
-//           return false;    
-//       }
-//    }
+
 //    //Arraya palindrome numbers in 120 to 150 ;
 // //    fn array_palindrome_number(s : i32 , s1 : i32)-> Vec<i32>{
 // //    let mut num = Vec::new();
