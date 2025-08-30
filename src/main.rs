@@ -156,54 +156,6 @@ mod map;
 //     }
 //     num
 // }
-// fn prime_numberss(s : i32 , s1 : i32 )-> Vec<i32>{
-//   let mut num = Vec::new();
-//   for d in 2..=s.into(){
-//    let limit = (d as f64).sqrt() as i32;
-//    let mut is_num = true;
-//    for i in 2..=limit{
-//       if d % i == 0 {
-//          is_num = false;
-//          break;
-//       }
-//    }
-//    if is_num {
-//       num.push(d);
-//    }
-//   }
-// for d in 2..=s1.into(){
-//    let limit = (d as f64).sqrt() as i32;
-//      let mut is_num = true;
-//    for i in 2..=limit{
-//     if d % i == 0 {
-//         is_num = false;
-//         break;
-//       }
-      
-//    }
-//    if is_num{
-//          num.push(d);
-//       }
-// }
-
-// num
-// }
-
-//    //Arraya palindrome numbers in 120 to 150 ;
-// //    fn array_palindrome_number(s : i32 , s1 : i32)-> Vec<i32>{
-// //    let mut num = Vec::new();
-// //    for d in s..=s1.into(){
-// //     let is_num = d.to_string();
-// //     let rev = is_num.chars().rev().collect::<String>();
-// //     if is_num == rev {
-// //       num.push(d);
-// //     }
-    
-// //   }
-
-// //   num
-
-// //   }
 
 
 
@@ -245,29 +197,6 @@ mod map;
 
 //    }
 
-// //Reverse word string
-// //"Hello Word" -> Expected output Word Hello
-
-
-
-// //Starting word capiatal 
-// //"hello manoj seetaram"
-// //Tommarrow plan i devide the problem stamnet based on methos and anslys when whre i use this method this is my task tommmarrow
-// fn first_word_capital(s : &str)-> String{
-//          let mut words = Vec::new();
-//          for i in s.split_whitespace(){
-//             let mut ch = i.chars();
-//           let word = ch.next().map(|v|v.to_ascii_uppercase());
-//           let lower = ch.skip(1).map(|v|v.to_ascii_lowercase()).collect::<String>();
-//         let wordss = match word {
-//             Some(v) => format!("{}{}", v , lower),
-//            None => String::new(),
-//         };
-//         words.push(wordss);
-//          }
-//       words.join(" ")
-// }
- 
 
 
 fn main(){

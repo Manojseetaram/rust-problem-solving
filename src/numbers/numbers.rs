@@ -149,6 +149,40 @@ pub fn lcm_number(a : i32  , b : i32)-> i32{
    let temp = (a * b ) / lcm;
    temp
 }
+//14 . All prime numbers 2 to 20
+fn prime_numberss(s : i32 , s1 : i32 )-> Vec<i32>{
+  let mut num = Vec::new();
+  for d in 2..=s.into(){
+   let limit = (d as f64).sqrt() as i32;
+   let mut is_num = true;
+   for i in 2..=limit{
+      if d % i == 0 {
+         is_num = false;
+         break;
+      }
+   }
+   if is_num {
+      num.push(d);
+   }
+  }
+for d in 2..=s1.into(){
+   let limit = (d as f64).sqrt() as i32;
+     let mut is_num = true;
+   for i in 2..=limit{
+    if d % i == 0 {
+        is_num = false;
+        break;
+      }
+      
+   }
+   if is_num{
+         num.push(d);
+      }
+}
+
+num
+}
+
  //Number printing operation 
 pub fn numbers_operatins(){
     let n = 8;
@@ -156,6 +190,8 @@ pub fn numbers_operatins(){
     let sum = 123;
     let ap = 120;
     let ap1 = 150;
+    let p = 2;
+    let p1 = 20;
     
     
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
@@ -170,6 +206,7 @@ pub fn numbers_operatins(){
     println!("Prime numbers : {}-> {:?}",n , prime_numbers(n));
     println!("Reverse same number : {} = {}",ap,reverse_same_number(ap));
     println!("The gcd numbr : {}",gcd_number(ap, ap1));
-      println!("The lcm numbr : {}",lcm_number(ap, ap1));
+    println!("The lcm numbr : {}",lcm_number(ap, ap1));
+    println!("The prime numbers : {:?}", prime_numberss(p, p1))
 
 }
