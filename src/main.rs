@@ -176,32 +176,10 @@ mod map;
 // }
 
 
-// //sum of digits 
-// fn sum_of_digits(s : i32)-> i32{
-//   let mut sum = 0;
-//   for i in s.to_string().chars(){
-//      sum += i.to_digit(10).unwrap() as i32;
-
-//   }
-//   sum
-// }
 
 
 
 
-
-// //Revrse number 
-// fn reverse_number_oreder(s : Vec<i32>)-> Vec<i32>{
-//    let mut num = s.clone();
-//    for pass in 0..num.len(){
-//     for i in 0..num.len() - pass - 1 {
-//       if num[i] > num [i + 1]{
-//         num.swap(i, i + 1);
-//       }
-//     }
-//    }
-//    num
-// }
 
 // //Find non repeating character fn non_repeating(s : &str)-> Option<char>{
 // fn non_repeating(s : &str)-> Option<char>{
@@ -223,15 +201,7 @@ mod map;
    
     
 // }
-// //Word frimary is 
-// fn lowercase_words(s : &str)-> HashMap<String , i32>{
-//     let mut str = HashMap::new();
-//     for i in s.split_whitespace(){
-//        let clear = i.chars().filter(|v | v.is_alphanumeric()).collect::<String>().to_uppercase();
-//        str.entry(clear).and_modify(|v|*v += 1).or_insert(1);
-//     }
-//     str
-// }
+
 // //Sort string by lenght 
 // fn ordering_string_by_length(s : Vec<String>)-> Vec<String>{
 //    let mut str = s.clone();
