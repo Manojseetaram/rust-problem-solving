@@ -38,6 +38,7 @@ pub fn second_largest_number(s : Vec<i32>)-> i32{
   }
   n
 }
+//5. second smalest number
 pub fn second_smalest_number(s : Vec<i32>)-> i32{
      let mut num = s[0];
      let mut n = s[1];
@@ -52,6 +53,7 @@ pub fn second_smalest_number(s : Vec<i32>)-> i32{
      }
      n
 }
+
 //Array operation
 pub fn array_operation(){
      let num = vec!['1' , '2' ,'3' , '4' , '5','6'];
@@ -62,7 +64,8 @@ pub fn array_operation(){
      println!("The largest number is : {}", largest_number(num_op.clone()));
      println!("The smalest number is : {}", smalest_number(num_op.clone()));
      println!("This is a Secondlargest number : {}",second_largest_number(num_op.clone()));
-     println!("This is a Second smalest number : {}",second_smalest_number(num_op.clone()))
+     println!("This is a Second smalest number : {}",second_smalest_number(num_op.clone()));
+    
 
 
 }

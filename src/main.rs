@@ -14,21 +14,7 @@ mod map;
 
 
 
-// //prime numbers 
-// fn prime_numbers(s : i32)-> bool{
-//    if 2 < 0 {
-//     return  false;
-//     }
-//     let limit = (s as f64).sqrt() as i32;
-//     for i in 2..=limit{
-//         if 2 % i == 0 {
-//          return  false;
-//         }
-//     }
-//     true
 
-
-// }
 
 
 
@@ -86,14 +72,7 @@ mod map;
 //    result
 // }
 
-// //count each numr 
-// fn each_umber(s : &str)-> HashMap<String , i32>{
-//    let mut count = HashMap::new();
-//    for i in s.split_whitespace(){
-//     *count.entry(i.to_string()).or_insert(0) += 1
-//    }
-//    count
-// }
+
 // //reverse also same word  palindrome checker 
 // fn reverse_palindrome(s : &str)-> bool{
  
