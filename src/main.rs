@@ -76,14 +76,7 @@ mod map;
 //     }
 //     alp
 // }
-// //Remove The duplicate the array
-// fn remove_duplicate(s :Vec<char>)-> HashSet<char>{
-//    let mut  sum = HashSet::new();
-//      for i in s{
-//         sum.insert(i);
-//      }
-//      sum
-// }
+
 // fn incremnet(s: &str)->Vec<(String , usize)>{
 //    let words: Vec<String> = s.split_whitespace().map(|s|s.to_string()).collect();
 //    let mut result = Vec::new();

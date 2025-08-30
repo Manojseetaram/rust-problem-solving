@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 //1. count the number of charactor 
 pub fn count_chars(s: &str)-> HashMap<char , i32>{
@@ -18,10 +18,20 @@ pub fn uppercase_string(s : &str)-> HashMap<String , i32>{
     str
 }
 
-
+//3. Remove the duplicate in the array
+pub fn remove_the_duplicate(s : Vec<char>)-> HashSet<char>{
+   let mut sum = HashSet::new();
+   for i in s {
+   sum.insert(i);
+   }
+   sum
+}
+//
 pub fn hash_map_hashset_operation(){
     let str = "Manoj seetaram";
+    let remove = vec!['a' , 'b' , 'c' , 'c'];
     println!("Countin the number of charactors : {:?} ",count_chars(str));
-    println!("Lower case converted to the uppercase : {:?}",uppercase_string(str))
+    println!("Lower case converted to the uppercase : {:?}",uppercase_string(str));
+    println!("Remove the duplicate chars in the array : {:?}",remove_the_duplicate(remove) );
 
 }

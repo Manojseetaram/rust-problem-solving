@@ -129,6 +129,6 @@ pub fn numbers_operatins(){
     println!("The Arm strong number : {:?}" ,arm_strong_number(sum));
     println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) );
     println!("Palindrome number is : {:?}" , array_palindrome_number(ap , ap1));
-    println!("num is eqult to the sum of its proper divisors : {}")
+    println!("num is eqult to the sum of its proper divisors : {:?} - > {}",n , is_perfect_number(n))
 
 }
