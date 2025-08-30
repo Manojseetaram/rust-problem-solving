@@ -30,23 +30,9 @@ mod map;
 
 
 
-// //palagram 
-// fn palagram_word(s : &str)-> HashSet<char>{
-//     let mut alp = HashSet::new();
-//     for i in s.chars(){
-//         alp.insert(i);
-//     }
-//     alp
-// }
 
-// fn incremnet(s: &str)->Vec<(String , usize)>{
-//    let words: Vec<String> = s.split_whitespace().map(|s|s.to_string()).collect();
-//    let mut result = Vec::new();
-//    for (word,i) in words.iter().enumerate(){
-//       result.push((i.clone(), word + 1));
-//    }
-//    result
-// }
+
+  
 
 
 // //reverse also same word  palindrome checker 

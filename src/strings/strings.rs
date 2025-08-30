@@ -89,6 +89,15 @@ pub fn first_word_uppercase(s : &str)-> String{
   }
   word.join("")
 }
+// 9. Increment the count in string words 
+pub fn increment_the_count(s : &str)-> Vec<(String , usize)>{
+  let words : Vec<String> = s.split_whitespace().map(|s|s.to_string()).collect();
+  let mut result = Vec::new();
+  for (i , word) in words.iter().enumerate(){
+       result.push((word.clone() , i + 1));
+  }
+  result
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -101,6 +110,7 @@ pub fn string_operation(){
     println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
     println!("Rverse the Word : {} -> {:?}", word , revrse_word(word));
     println!("Non repeating char : {} -> {:?}",word,non_repeating_strig(word));
-    println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word))
+    println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word));
+    println!("Incremnet the count in string words : {:?} ",increment_the_count(word));
 
 }
