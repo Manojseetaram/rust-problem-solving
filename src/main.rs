@@ -106,39 +106,7 @@ fn arm_strong(s : i32)-> bool{
 
 
 
-//second largest
-fn second_largest(s: Vec<i32>)-> i32{
-     let mut  largest = s[0];
-     let mut second_number = s[1];
-     for i in s.iter(){
-      if *i > largest {
-         second_number = largest;
-         largest = *i ;
 
-      }else if *i > second_number {
-        let _ = i < &largest ;
-          second_number = *i
-
-      }
-     };
-     second_number
-}
-
-fn smalest_secondnumber(s: Vec<i32>)-> i32{
-    let  mut smalest = s[1];
-    let mut second_smalest = s[2];
-    for i in s.iter(){
-        if *i < smalest {
-           second_smalest = smalest ;
-           smalest = *i
-        }else if *i < second_smalest {
-            let _ =  i > &smalest ;
-            second_smalest = *i
-        }
-    }
-    second_smalest
-
-}
 //divide words
 fn divide_words(s : &str)-> HashMap<String ,i32>{
         let mut sum = HashMap::new();
@@ -209,15 +177,7 @@ fn anagram_cheker( s1:&str , s2: &str)-> bool{
      
 }
 
-fn factorial_number(s : &i32)-> i32{
-  if *s == 0 {
-    return 1;
-  }else {
-       *s * factorial_number(&(*s -1))
-  }
 
-
-}
 //mising array number
 fn missing_number(s : Vec<i32>)-> i32{
    let num = s.len() as i32 + 1;
@@ -298,13 +258,7 @@ fn order_numbers(j : Vec<i32>)-> Vec<i32>{
          num
 }
 //Factorial numbers 
-fn factorial_numberss(s : &i32)-> i32{
-  let mut  num = 1 ;
-  for i in 1..=*s{
-    num *= i
-  }
-  num
-}
+
 //Revrse number 
 fn reverse_number_oreder(s : Vec<i32>)-> Vec<i32>{
    let mut num = s.clone();
@@ -538,18 +492,7 @@ fn revrse_word (s : &str)-> String{
       }
       str.join(" ")
 }
-//vovels in string 
-//aeiou
-fn vowels_in_string(s : &str)-> String{
-   let mut count = 0 ;
-   for i in s.chars(){
-      let ch = i.to_lowercase().next().unwrap();
-      if ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' {
-  count += 1;
-      }
-   }
-   count.to_string()
-}
+
 //Starting word capiatal 
 //"hello manoj seetaram"
 //Tommarrow plan i devide the problem stamnet based on methos and anslys when whre i use this method this is my task tommmarrow
@@ -630,15 +573,15 @@ fn main(){
     println!("The remove dupicat number : {:?}", duplicate_number(duplicates.clone()));
     println!("The longest word in sentense : {}" , longest_word(palagram));
     println!("The number is perfect : {}" , is_perfect(num));
-    println!("The factorial number is : {} ", factorial_numbers(&num));
-    println!("The Fibonaci {} number is : {}" ,num , fibbonaci_number(num) );
+    // println!("The factorial number is : {} ", factorial_numbers(&num));
+    // println!("The Fibonaci {} number is : {}" ,num , fibbonaci_number(num) );
     println!("The sum of digits for last number : {:?}" ,sum_of_digits(digit));
    //  println!("The reverse {:?}  string : {:?} ->{:?}" ,anagram , duplicates ,revrese_string(anagram , duplicates));
     println!("The reverse {:?} {:?} string: {:?}", anagram, duplicates, revrese_strings(anagram, duplicates.clone()));
 
-println!("The smalest number : {}" , smalest_numbers(number.clone()));
+// println!("The smalest number : {}" , smalest_numbers(number.clone()));
 println!("The order wise numbers : {:?}" ,order_numbers(aray1.clone()));
-println!("The Factorial number : {:?}" ,factorial_numberss(&num.clone()) );
+// println!("The Factorial number : {:?}" ,factorial_numberss(&num.clone()) );
 println!("The oreder number : {:?} " , reverse_number_oreder(aray1.clone()));
 println!("The order string setting : {:?}" ,order_string(order.clone()));
 println!("The Non repeating charactor is : {:?}" ,non_repeating(sentense));

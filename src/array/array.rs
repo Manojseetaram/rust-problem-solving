@@ -61,8 +61,8 @@ pub fn array_operation(){
      println!("This is revrse number : {:#?}" ,revrse_num(num));
      println!("The largest number is : {}", largest_number(num_op.clone()));
      println!("The smalest number is : {}", smalest_number(num_op.clone()));
-     println!("This is a Secondlargest number : {}",second_largest_number(num_op));
-     println!("This is a Second smalest number : {}",second_smalest_number(num_op))
+     println!("This is a Secondlargest number : {}",second_largest_number(num_op.clone()));
+     println!("This is a Second smalest number : {}",second_smalest_number(num_op.clone()))
 
 
 }
