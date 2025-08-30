@@ -217,32 +217,8 @@ mod map;
 //    result1.iter().map(|x|(result.clone(), *x )).collect()
 // }
 
-// //Order string setting 
-// fn order_string(s : Vec<String>)-> Vec<String>{
-//        let mut str = s.clone();
-//        for pass in 0..str.len(){
-//         for i in 0..str.len() -pass - 1{
-//           if str[i].len() > str[i + 1].len(){
-//               str.swap(i, i + 1);
-//           }
-//         }
-//        }
-//        str
-// }
 
-// //Arrange the numbers in order wise
-// fn order_numbers(j : Vec<i32>)-> Vec<i32>{
-//          let mut num = j.clone();
-//          for pass in 0..num.len(){
-//          for i in 0..num.len() - pass - 1 {
-//         if num[i] > num[i + 1] {
-//            num.swap(i ,  i + 1);
-//          }
-//          }
-//          }
-//          num
-// }
-// //Factorial numbers 
+
 
 // //Revrse number 
 // fn reverse_number_oreder(s : Vec<i32>)-> Vec<i32>{
