@@ -1,7 +1,3 @@
-
-
-
-
 //1 .Calculte the ntg Fibbonaci numbers 
 pub fn ntg_fibonaci(n :i32)-> i32{
     let (mut  a  , mut b ) = (0 , 1);

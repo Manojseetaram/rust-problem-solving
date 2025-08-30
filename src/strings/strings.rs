@@ -74,7 +74,21 @@ pub fn non_repeating_strig(s : &str)-> Option<char>{
   }
   None
 }
-
+// 8 . Starting word capiatal
+pub fn first_word_uppercase(s : &str)-> String{
+  let mut word = Vec::new();
+  for i in s.split_whitespace(){
+    let mut ch = i.chars();
+    let up = ch.next().map(|v|v.to_ascii_uppercase());
+    let low = ch.skip(1).map(|v|v.to_ascii_lowercase()).collect::<String>();
+    let words = match up {
+        Some(v) => format!("{}{}", v , low),
+        None => String::new(),
+    };
+    word.push(words);
+  }
+  word.join("")
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
     let word = "I love Rust , Rust is not cult";
@@ -87,5 +101,6 @@ pub fn string_operation(){
     println!("Reverse string and number : {:?}", revrse_string_and_number(word , num));
     println!("Rverse the Word : {} -> {:?}", word , revrse_word(word));
     println!("Non repeating char : {} -> {:?}",word,non_repeating_strig(word));
+    println!("Staring word capiatal : {} = {}  ", word , first_word_uppercase(word))
 
 }
