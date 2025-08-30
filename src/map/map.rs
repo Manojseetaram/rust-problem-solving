@@ -14,5 +14,5 @@ fn count_chars(s: &str)-> HashMap<char , i32>{
 
 pub fn hash_map_hashset_operation(){
     let str = "Manoj seetaram";
-    println!("Countin the number of charactors : {} ",count_chars(str))
+    println!("Countin the number of charactors : {:?} ",count_chars(str))
 }

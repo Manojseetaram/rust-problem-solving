@@ -21,8 +21,22 @@ pub fn vovels(s : &str)-> String{
     count.to_string()
 
 }
+//3.order by the string length 
+pub fn order_string_length(s : Vec<String>)-> Vec<String>{
+      let mut str = s.clone();
+      for pass in 0..str.len(){
+        for i in 0..str.len() - pass - 1 {
+       if str[i].len() > s[i + 1].len(){
+           str.swap(i, i + 1);
+       }
+        }
+      }
+      str
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
+    let s = vec!["apple".to_string() , "kiwi".to_string() , "banana".to_string()];
     println!("This is reverse string : {:?}" ,revrese_string(str));
-    println!("Vovels in string : {}",vovels(str) )
+    println!("Vovels in string : {}",vovels(str) );
+    println!("Order by the string lenth : {:?}",order_string_length(s))
 }
