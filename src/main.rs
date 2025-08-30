@@ -350,27 +350,7 @@ mod map;
 // //   num
 
 // //   }
-// //Strong number of 145;
-// fn strong_number(s : i32)-> bool{
-//    let num = s.to_string();
-//   let mut sum = 0;
-//    for i in num.chars(){
-//     let rev = i.to_digit(10).unwrap();
-//    let mut factorial = 1;
-//    for d in 1..=rev{
-//      factorial *= d ;
-//    }
-//    sum += factorial;
-   
 
-//    }
-
-//    if sum == s.try_into().unwrap() {
-//       return true;
-//    }else{
-//       return false;
-//    }
-// }
 // //Arry palindrome NUMBER 120 TO 150
 // fn array_palindrome_numbers(s: i32, s1: i32) -> Vec<i32> {
 //     let mut num = Vec::new();

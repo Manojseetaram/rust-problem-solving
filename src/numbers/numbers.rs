@@ -68,6 +68,24 @@ pub fn arm_strong_number(s : i32)-> bool{
    }
    sum == s.try_into().unwrap()
 }
+//7. Factorial of each number == sum number 
+pub fn factorial_of_each_number(s : i32)-> bool{
+    let  num = s.to_string();
+    let mut sum = 0;
+    for i in num.chars(){
+      let n = i.to_digit(10).unwrap();
+      let mut factorial = 1;
+       for d in 1..=n{
+        factorial *=d
+       }
+       sum += factorial
+    }
+    if sum == s.try_into().unwrap() {
+        return true;
+    }else {
+        return false;
+    }
+}
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
@@ -79,5 +97,6 @@ pub fn numbers_operatins(){
     println!("The {}th Factorial number is: {}", n ,factorial_number(&n));
     println!("Arrange ordere wise number : {:?}", arrange_oreder_wise_number(number));
     println!("Sum of digit in the number : {}",sum_of_number(sum) );
-    println!("The Arm strong number : {:?}" ,arm_strong_number(sum))
+    println!("The Arm strong number : {:?}" ,arm_strong_number(sum));
+    println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) )
 }
