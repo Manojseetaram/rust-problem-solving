@@ -50,14 +50,23 @@ fn arrange_oreder_wise_number(s : Vec<i32>)-> Vec<i32>{
     }
     count
 }
-
+//5. sum of digit in the number 
+pub fn  sum_of_number(s : i32)-> i32{
+      let mut num = 0;
+      for i in s.to_string().chars(){
+       num += i.to_digit(10).unwrap() as i32
+      }
+      num
+}
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
+    let sum = 123;
 
     
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
     println!("The {}th Factorial number is: {}", n ,factorial_number(&n));
-    println!("Arrange ordere wise number : {:?}", arrange_oreder_wise_number(number))
+    println!("Arrange ordere wise number : {:?}", arrange_oreder_wise_number(number));
+    println!("Sum of digit in the number : {}",sum_of_number(sum) )
 }

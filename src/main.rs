@@ -36,14 +36,6 @@ mod map;
 
 
 // }
-// //Find some digits of string 
-// fn sum_digits(s : i32)->i32 {
-//   let mut num = 0;
-//   for i in s.to_string().chars(){
-//       num += i.to_digit(10).unwrap() as i32;
-//   }
-//   num
-// }
 
 
 
