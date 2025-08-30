@@ -2,6 +2,8 @@
 
 //1 .revrse string
 
+use std::collections::HashMap;
+
 pub fn revrese_string(s :&str)-> String{
      let mut str = String::new();
      for i in s.chars(){
@@ -33,10 +35,21 @@ pub fn order_string_length(s : Vec<String>)-> Vec<String>{
       }
       str
 }
+// 4. count the word 
+pub fn count_words_in_string(s : &str)-> HashMap<String , i32>{
+    let mut count = HashMap::new();
+    for i in s.split_whitespace(){
+        *count.entry(i.to_string()).or_insert(0) += 1;
+    }
+    count
+
+}
 pub fn string_operation(){
     let str = "Manojseetaram";
+    let word = "I love Rust , Rust is not cult";
     let s = vec!["apple".to_string() , "kiwi".to_string() , "banana".to_string()];
     println!("This is reverse string : {:?}" ,revrese_string(str));
     println!("Vovels in string : {}",vovels(str) );
-    println!("Order by the string lenth : {:?}",order_string_length(s))
+    println!("Order by the string lenth : {:?}",order_string_length(s));
+    println!("Count the word : {:?}" , count_words_in_string(word));
 }

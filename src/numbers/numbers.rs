@@ -99,12 +99,14 @@ pub fn array_palindrome_number(s : i32 , s1 : i32)-> Vec<i32>{
         }
         num
 }
+//9. Count the word in string 
 pub fn numbers_operatins(){
     let n = 8;
     let number = vec![1 ,5, 8 , 9 , 4,2,3,6];
     let sum = 123;
     let ap = 120;
     let ap1 = 150;
+    
     
     println!("The {}th Fibonacci number is: {}", n, ntg_fibonaci(n));
     println!("The {}th Fibonacci number is: {}", n,fibonaci(n));
@@ -114,4 +116,5 @@ pub fn numbers_operatins(){
     println!("The Arm strong number : {:?}" ,arm_strong_number(sum));
     println!("Factorial of each number == sum number {} = {}", sum ,factorial_of_each_number(sum) );
     println!("Palindrome number is : {:?}" , array_palindrome_number(ap , ap1));
+
 }

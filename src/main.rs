@@ -1,5 +1,5 @@
-use std::collections::HashMap;
-use std::{char};
+
+
 use std::{ collections::{HashSet}};
 mod numbers;
 mod array;
@@ -74,15 +74,7 @@ mod map;
 
 
 
-// //divide words
-// fn divide_words(s : &str)-> HashMap<String ,i32>{
-//         let mut sum = HashMap::new();
-//         for i in s.split_whitespace(){
-//           *sum.entry(i.to_string()).or_insert(0) += 1
-          
-//         }
-//        sum
-// }
+
 // //palagram 
 // fn palagram_word(s : &str)-> HashSet<char>{
 //     let mut alp = HashSet::new();
@@ -193,11 +185,7 @@ mod map;
 //   }
 //   sum
 // }
-// fn revrese_strings(s1 : &str , s2 : Vec<i32>)-> Vec<(String , i32)>{
-//    let result = s1.chars().rev().clone().collect::<String>();
-//    let result1 = s2.iter().rev().copied().collect::<Vec<i32>>();
-//    result1.iter().map(|x|(result.clone(), *x )).collect()
-// }
+
 
 
 
